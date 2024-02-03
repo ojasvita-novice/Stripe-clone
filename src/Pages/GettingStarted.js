@@ -214,7 +214,7 @@
 
           <button className="btn btn-primary">
             <Link to="/">
-            <img src={back} className="backimage" />
+            Back to Homepage
             </Link>
           </button>
         </>
