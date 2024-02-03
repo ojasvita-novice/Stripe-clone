@@ -1,0 +1,500 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+form
+{
+    background-color: powderblue;
+    border:1px solid black;
+    width:85vw;
+    height:115%;
+    margin:2em auto;
+    display:flex;
+    border:darkgray;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow:4px 4px 9px 2px silver;
+    background-color: #44b09e;
+    background-image: linear-gradient(315deg, #eac0df 80%, #f3c3ef 75% );
+}
+
+.backimage
+{
+
+    height:50px;
+    width:50px;
+    background-color: transparent;
+    background-blend-mode:darken;
+
+}
+.title{
+    display:flex;
+}
+
+.logo
+{
+    height:100px;
+    width:100px;
+    border-radius:100px;
+}
+
+.title h3
+{
+    font-size:27px;
+    font-family: 'Josefin Slab', serif;
+    font-weight:900;
+    margin:38px 8px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.bill-label
+{
+    font-size:19px;
+}
+input[name="bill"]
+{
+    margin-left:12px;
+    padding:5px 0 2px 7px;
+    border:none;
+    border-radius:0 7px 0px  7px ;
+    width:35vw;
+
+}
+
+::placeholder
+{
+  text-align:right;
+  margin:0 6px 0 0;
+    
+}
+
+.receipt
+{
+    margin-left:5px;
+    margin-top: 2.5em;
+}
+
+.card-details
+{
+    padding:0 5px;
+    margin-top:37px;
+    
+}
+
+.card-title
+{
+    display:flex;
+    justify-content: center;;
+
+}
+
+.name-holder
+{
+    position:relative;
+    margin:9px 0;
+}
+
+
+.first-name-label,.last-name-label,.email-label,.card-no-label,.cvv-label,.expiry-label
+{
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:1.2em;
+    padding:6px 7px;
+    cursor:text;
+}
+
+label{
+    font-weight:bold;
+}
+
+
+.first-name-input,.last-name-input,.email-input,.card-no-input,.cvv-input,.expiry-input
+{
+  height:2.5rem;
+  border:none;
+  border-radius:8px 0 8px 0;
+  padding:15px 0 2px 7px;
+}
+
+
+.first-name-input:focus+.first-name-label,.first-name-input:valid+.first-name-label,.last-name-input:focus+.last-name-label,.last-name-input:valid+.last-name-label,.email-input:focus+.email-label,.email-input:valid+.email-label, .card-no-input:focus+.card-no-label,.card-no-input:valid+.card-no-label, .cvv-input:focus+.cvv-label,.cvv-input:valid+.cvv-label,.expiry-input:focus+.expiry-label,.expiry-input:valid+.expiry{
+    font-size:0.85em;
+    padding-top:2px;
+    font-weight: bold;
+    pointer-events:none;
+}
+
+.expiry-input.has-value + .expiry-input-label {
+  font-size: 0.85em;
+  padding-top: 2px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+
+.card-values
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap:40px;
+}
+
+.break
+{
+    color:black;
+    height:3px;
+    width:75vw;
+    margin:33px 0 0 0;
+    border-top:1px dashed black;
+   
+}
+
+.personal-details
+{
+
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    margin:-10px 8px;
+  
+}
+
+input[name="address1"],input[name="address2"]
+{
+  width:75.5vw;
+  border:none;
+  border-left:2px solid gray;
+  border-right: 2px solid gray;
+  padding:5px;
+  margin-top:4.5px;
+}
+
+input[name="address1"]::placeholder,input[name="address2"]::placeholder
+{
+  text-align:left;
+}
+
+.address
+{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin-top:0.6em;
+    
+}
+
+.address input{
+   border:none;
+  border-top:2px solid gray;
+  border-right: 2px solid gray;
+  outline:none;
+  padding:2px;
+}
+
+
+.end-form
+{
+    margin-top:30px;
+    margin-left:9px;
+    display:flex;
+    justify-content:flex-start;
+    flex-direction: column;
+}
+
+.end-form p
+{
+    font-weight: 800;
+    color:black;
+}
+
+.terms 
+{
+    display:grid;
+    grid-template-columns: 14px 400px;
+    column-gap:0.2em;
+    align-content: center;
+}
+
+.submit-btn
+{
+  width:100px;
+  height:40px;
+  margin:1em auto;
+
+  border-radius:8px;
+  font-size:18px;
+  text-align: center;
+  color:white;
+  background-color: rgb(96, 31, 93);
+  border:none;
+  box-shadow:2px 2px 2px rgb(173, 172, 172);
+
+}
+
+.submit-btn:hover{
+      color:white;
+  background-color: rgb(140, 143, 143);
+}
+
+
+
+fieldset{
+    border:none;
+   
+}
+
+@media (min-width:400px) and (max-width:650px)
+{
+
+form{
+    width:90vw;
+}
+
+    .logo
+{
+    height:80px;
+    width:80px;
+    border-radius:100px;
+    margin-top:5px;
+}
+
+.title h3
+{
+    font-size:20px;
+    
+}
+
+.receipt{
+
+    display:flex;
+    flex-direction:column;
+    
+   justify-content:center;
+
+   align-items: center;
+}
+
+.bill-label
+{
+    font-size:18px;
+    margin-bottom:8px;
+}
+input[name="bill"]
+{
+    margin:0;
+    padding:5px 0 2px 7px;
+    width:60vw;
+
+}
+
+
+.card-values{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.card-values input
+{
+    width:60vw;
+}
+
+.personal-details
+{
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+ 
+}
+
+
+
+.address{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.address input
+{
+    width:40vw;
+    margin-top:12px;
+}
+
+input[name="pincode"]
+{
+    margin-right:20px;
+}
+
+input[name="city"]
+{
+    margin-left:8px;
+}
+
+
+input[name="address1"],input[name="address2"]
+{
+  width:87vw;
+
+  margin-top:5px;
+}
+
+
+}
+
+
+
+@media (min-width:700px)
+{
+    .address{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        column-gap: 3em;
+    }
+  .address input{
+    width:100%;   
+  }
+
+  input[name="address1"],input[name="address2"]
+{
+  width:83vw;
+ 
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .personal-details{
+    margin:19px 20px;
+   
+}
+
+
+
+
+
+
+input{
+    display:inline-block;
+    padding:8px 8px;
+    margin:7px 10px;
+    width:150px;
+    height:24px;
+    border-radius: 5px;
+    border:solid 1px gray;
+    font-size:1em;
+    outline-color:rgb(117, 121, 121);
+
+}
+
+
+input[name="email"]
+{
+    width:200px;
+}
+
+p
+{
+    margin-top:2px;
+    margin-left:9px;
+}
+
+
+
+label
+{
+    font-size:17px;
+    font-weight: bold;
+}
+
+input[name="bill"]::placeholder
+{
+    text-align:end;
+}
+
+fieldset{
+   
+    border:none;
+   
+}
+
+.card-details legend,.receipt label{
+    margin-left:9px;
+}
+
+
+
+.personal-details input[name="address1"],input[name="address2"]
+{
+    width:101%;
+    margin:5px;
+    margin-left:-2px;
+}
+
+
+
+
+.address input{
+    width:100px;  
+    border-radius:6px; 
+    
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
