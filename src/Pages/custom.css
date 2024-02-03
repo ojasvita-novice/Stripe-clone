@@ -21,6 +21,16 @@ form
     background-image: linear-gradient(315deg, #eac0df 80%, #f3c3ef 75% );
 }
 
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin:0; 
+}
+
+
 .backimage
 {
 
